@@ -72,6 +72,12 @@ The six GitHub feed/platform metadata files match the staged production values,
 with no active beta. Commits and the 1.0.0 tag use verified CalciteQuickSolve SSH
 signatures. Publication receipts are retained in `artifacts/github-1.0.0/` locally.
 
+After the Android correction, all 11 public assets were downloaded and verified
+again; the APK matches the package installed on the phone. All 184 live website
+files and all six GitHub metadata files matched the corrected build and feeds.
+Correction receipts are retained in `artifacts/github-1.0.0-corrected/`; the
+original artifacts and signed release tag remain preserved for audit.
+
 Windows production update discovery and signed downloads use the public GitHub
 repository. Beta updates remain opt-in. Android users download and install the
 signed APK; there is no automatic Android updater or Play Store publication.
