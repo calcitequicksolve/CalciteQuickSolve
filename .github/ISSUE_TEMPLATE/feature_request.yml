@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest a feature or improvement to CalciteQuickSolve.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Describe what you are trying to accomplish and where the current behavior falls short.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe how it should work. A concrete example or scenario helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Affected platforms
+      multiple: true
+      options:
+        - Windows
+        - Android
+        - Browser or self-built application
+        - All platforms
+  - type: input
+    id: version
+    attributes:
+      label: Current CQS version
+      description: Include this if the suggestion relates to existing behavior.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or current workaround
+      description: Describe anything you have already tried or another approach that could help.
+  - type: upload
+    id: examples
+    attributes:
+      label: Screenshots, sketches or examples
+      description: Attach visual examples if they help explain the suggestion.

@@ -1,0 +1,80 @@
+name: Bug report
+description: Report an error, unexpected behavior, crash or missing changes.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: CQS version
+      description: Find this in Settings → About. For several devices, include every version.
+      placeholder: "For example: 0.1.8 Beta on both devices"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform and package
+      multiple: true
+      options:
+        - Windows installer
+        - Windows standalone EXE
+        - Android preview APK
+        - Browser or self-built application
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system and device
+      description: Include the Windows version/build, or Android version and phone model. Include the browser version for browser builds.
+      placeholder: "OS version/build; device model"
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Download or build details
+      description: Release/download link and date, or commit for a self-built app. Include a checksum if known, especially for rebuilt versions.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give a repeatable scenario and any sample expression or note content needed. Say whether it happens every time.
+      placeholder: |
+        1. Open...
+        2. Change...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What happened instead? Include the exact error text when available.
+    validations:
+      required: true
+  - type: textarea
+    id: sync
+    attributes:
+      label: Sync or encryption scenario, if relevant
+      description: List the devices, CQS versions and sync-app versions. Explain what each device edited, encrypted or deleted, and whether any app was closed, locked or offline. Mention shared versus private workspace folders and QR transfers when relevant.
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Screenshots or recording
+      description: Attach images or a short recording that shows the problem. Remove private note content or keys before sharing.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or additional context
+      description: Include relevant errors or logs if available, with private content removed.
+      render: text

@@ -1,7 +1,7 @@
 # Version 0.1.8 audit
 
 Audit date: 2026-11-02 UTC. The audited test build is published as the
-[0.1.8 GitHub prerelease](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v0.1.8).
+[0.1.8 GitHub beta](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v0.1.8).
 Production automatic updates remain unchanged; this build is in the beta channel.
 
 ## Scope
