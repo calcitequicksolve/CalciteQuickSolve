@@ -1,0 +1,12 @@
+downloads/
+artifacts/
+*.exe
+*.apk
+*.aab
+*.zip
+*.key
+*.private.pem
+*.keystore
+*.jks
+.env
+.env.*
