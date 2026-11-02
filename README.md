@@ -10,6 +10,8 @@ WebView2. Android packages labelled **preview** are Android 11+ ARM64 test build
 The [0.1.8 synchronization test build](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v0.1.8)
 is a prerelease. See its [release notes](release-notes/0.1.8.md). It is advertised
 only through the beta update channel; no production update is enabled here yet.
+Read the [verification report](docs/verification-0.1.8.md) for the tested scenarios
+and practical limits.
 
 ## Documentation
 
