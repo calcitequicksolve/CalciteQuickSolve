@@ -7,6 +7,10 @@ with local storage, encryption, immutable version history and folder synchroniza
 Release assets include checksums. The Windows installer and standalone EXE use
 WebView2. Android packages labelled **preview** are Android 11+ ARM64 test builds.
 
+The [0.1.8 synchronization test build](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v0.1.8)
+is a prerelease. See its [release notes](release-notes/0.1.8.md). It is advertised
+only through the beta update channel; no production update is enabled here yet.
+
 ## Documentation
 
 The `docs` directory contains the user guides bundled with the application.
