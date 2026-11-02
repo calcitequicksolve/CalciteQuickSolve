@@ -48,6 +48,20 @@ recovery guards and Android/desktop history-command parity after optimization.
 
 ## Distribution and limits
 
+All 11 GitHub Release assets were downloaded and matched byte for byte before
+the production feeds were pushed. Public downloads subsequently returned success
+with the expected sizes. An isolated native 0.1.8 installation discovered 1.0.0
+through GitHub with matching installer/EXE hashes, both with production preferences
+and beta opt-in. The disable switch and standalone installation restrictions also
+passed; no user installation was modified.
+
+After deployment, all 184 publicly readable website files matched the built bytes.
+All 15 previous website binary URLs returned HTTP 410. The old 0.1.8 GitHub Release
+was removed after its local archive was verified; 1.0.0 is the only public release.
+The six GitHub feed/platform metadata files match the staged production values,
+with no active beta. Commits and the 1.0.0 tag use verified CalciteQuickSolve SSH
+signatures. Publication receipts are retained in `artifacts/github-1.0.0/` locally.
+
 Windows production update discovery and signed downloads use the public GitHub
 repository. Beta updates remain opt-in. Android users download and install the
 signed APK; there is no automatic Android updater or Play Store publication.
