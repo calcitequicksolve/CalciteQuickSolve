@@ -1,5 +1,37 @@
 {
   "schemaVersion": 1,
   "prod": null,
-  "beta": null
+  "beta": {
+    "schemaVersion": 1,
+    "version": "0.1.8",
+    "releasedOn": "2026-10-28",
+    "channel": "beta",
+    "platform": "Windows",
+    "architecture": "x64",
+    "files": [
+      {
+        "updaterSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUjI4amQ2bWRMcXY3OFZjNnhRUWMvZlpTa3Y1S3JwVERoTGd2d3NxemttcDlWWkVHT0pjWjhMRXdoRjlOMTR3WFBxWUFzWXhIQmRCQUdJVVJmTHpiTjR0b1VJN05ZVWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjIxNTAzCWZpbGU6Q2FsY2l0ZVF1aWNrU29sdmVfMC4xLjhfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44CnI1aWdDQmhvY3ZuZlg3ekZpQ0E4MWtrZ2ZrR2xxU2x0bjVjd2gwZ3RuSUhJWnNhQkVoVEI1RzF3Vm5aSGdBbkFVdUdNNml6dkJVM0ZMVTFCdGhnY0N3PT0K",
+        "signerSubject": "",
+        "filename": "CalciteQuickSolve_0.1.8_x64-setup.exe",
+        "timestamped": false,
+        "sha256": "4faf5a34f2c5ec66213f7d618af75a1bda11c1bd33d34560e6e5b777b7833334",
+        "kind": "installer",
+        "signatureStatus": "unsigned",
+        "bytes": 10272072
+      },
+      {
+        "signerSubject": "",
+        "filename": "CalciteQuickSolve-0.1.8.exe",
+        "timestamped": false,
+        "installedSha256": "715da74e72869541d8655c0fcb5d797ba1ce834532db70622f4cf551da42c9b3",
+        "sha256": "233e04967388071544e4017473dc61d2eae946e4c3185a98a15abd97eb888265",
+        "kind": "portable",
+        "signatureStatus": "unsigned",
+        "bytes": 29918208
+      }
+    ],
+    "downloadHost": "github",
+    "publishedOn": "2026-11-02",
+    "notes": "# CalciteQuickSolve 0.1.8 — sync test build\n\nThis prerelease is for testing the new note history and synchronization behavior.\nUse 0.1.8 on every editing device and back up the complete workspace before testing.\n\n- Notes insert literal tabs by default. Shift+Tab removes an adjacent tab;\n  Ctrl+Tab and Ctrl+Shift+Tab move focus. Notes settings can disable this.\n- Complete incoming changes and compatible concurrent edits merge automatically.\n  Open notes update while preserving typing, selections and scroll when possible.\n- Immutable, hash-verified history preserves offline branches, attachments and\n  resolutions independently of the mutable note file. It uses Git-style ancestry\n  without a synchronized `.git` directory.\n- Conflicts have bordered excerpts, Basic/Advanced review, a count notification\n  and `!` actions in History/Search. Resolve on one device and the resolution\n  propagates to other devices, including after restart or unlock.\n- Files & sync can review every incoming change or choose a whole local/received\n  version with a notification. History-only descendants of approved content do\n  not ask for another review.\n- History has a refresh icon. New notes can choose a workspace before first save.\n  Workspace recovery, retained-folder imports and Android deletion are improved.\n- Android actions are more compact; unsupported live disk exports are hidden.\n- Draft recovery, save-and-close Settings, attachment errors and compatible\n  four-way histories were corrected during the audit.\n- New desktop builds use this GitHub repository for update discovery/downloads.\n\nKeep Syncthing conflict copies enabled; `maxConflicts=0` removes that recovery\nlayer. Ordinary content conflicts create synced conflict copies and do not stop\nSyncthing. CQS validates and captures recognized copies, archives them locally,\nthen publishes a resolved note and history. Provider errors such as permissions,\nmissing folders or filename case collisions still need provider attention.\n\nEncryption changes concurrent with edits require a protection choice under the\ndefault Ask policy. An unlocked authorized client can retain the edit with the\nchosen protection; locked clients apply that resolution after unlocking. Earlier\nplaintext history/backups cannot be retroactively removed from offline devices.\n\nWindows downloads include an installer and standalone EXE. Their Authenticode\nstatus is unsigned; the installer has the CQS updater signature. The Android\n11+ ARM64 APK retains the existing preview package ID and debug certificate and\ncan update the previous preview without clearing its data.\n\nProduction automatic updates are unchanged. To discover this test build in a new\ndesktop build, enable beta updates, or install it manually from these assets.\n"
+  }
 }
