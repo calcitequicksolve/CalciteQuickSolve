@@ -25,23 +25,33 @@ the version and documentation change.
 - The website download catalog contains only 1.0.0. Its build contains metadata,
   checksums, guides and assets, with no EXE or APK files.
 
+The Android packaging correction was checked separately: the installed 0.1.8
+APK and corrected 1.0.0 APK have the same application ID and signing certificate.
+Release guards accepted the corrected APK and rejected the incompatible signed
+APK, the debuggable preview, and the incompatible publication manifest. All 17
+website unit tests, Svelte checks, the static build, three release-page browser
+cases and the offline Help browser case passed again. Bridge command retention
+and 16 KB alignment passed on the corrected APK. The earlier merge/native audit
+was not rerun for this signing, packaging and documentation correction.
+
 ## Package identities
 
 | Package | SHA-256 |
 | --- | --- |
 | Windows installer | `70ec1dede08feb863cac6c5dcd51ac53daeda3a01c0d008d122099be5892a254` |
 | Windows standalone | `bfef266ee33de4b0389183090442a07c2c0aed88e159e02cbae23491abf39977` |
-| Android release APK | `b46c28675ebcba6f04ff323c22b9da5dffc22d3c64efdeb0b71a65bb4d4b0a32` |
+| Android release APK | `905b1972623be07ae84d44bec6887dcabf0d1574db3415f2ff5569596292b396` |
 
 Windows binaries are Authenticode unsigned. The installer has the verified CQS
 updater signature. Its native code contains the GitHub feed URLs and no old
-website update-feed URLs. The APK and Windows binaries embed the same production
-frontend, including the updated offline Help.
+website update-feed URLs. Windows binaries retain the original 1.0.0 frontend. The corrected APK embeds
+the same application behavior with Android offline Help updated to describe
+in-place upgrades; its frontend identity is recorded separately.
 
-The APK is release-signed with the existing production certificate, application
-ID `com.calcitequicksolve.android`, version name `1.0.0`, version code `1000000`,
+The APK is release-signed with the original installed certificate, application
+ID `com.calcitequicksolve.android.debug`, version name `1.0.0`, version code `1000000`,
 minimum API 30, target API 36 and `debuggable=false`. Its certificate SHA-256 is
-`a352c49631d24b4ac6513c5748cbfaab8c9ba957e9db8cfd0a01af89348df47a`.
+`a1d5809308571099936732a84676143018c03cc2b9defb6ed9c841a1d51cacbc`.
 Native libraries and ZIP offsets satisfy 16 KB alignment. Package inspection
 verified the newly built ARM64 library, all annotated bridge commands, workspace
 recovery guards and Android/desktop history-command parity after optimization.
@@ -66,11 +76,16 @@ Windows production update discovery and signed downloads use the public GitHub
 repository. Beta updates remain opt-in. Android users download and install the
 signed APK; there is no automatic Android updater or Play Store publication.
 
-The production Android app installs separately from the retired `.debug` preview.
-Transfer complete workspaces and matching keys and verify the result before
-removing that preview. See the [Android guide](android.md).
+The corrected Android APK updates the earlier APK in place. The historical
+`.debug` application-ID suffix is permanent and does not make release builds
+debuggable. The initial 1.0.0 APK used an incorrect ID and certificate; its bytes
+remain archived locally and its public asset has been replaced. See the
+[Android guide](android.md).
 
-No personal notes were used as fixtures. This release check did not install over
-the user's Windows profile or install the production APK on the phone. Physical
+The corrected APK was installed over 0.1.8 on the phone and launched successfully.
+Its certificate matched the installed APK; Android retained the application UID,
+original installation time, data path and both credential/device storage inodes.
+No uninstall or data clear was performed. Personal notes were not read or used
+as fixtures, and the user's Windows profile was not modified. Physical
 camera/biometric workflows and third-party Drive/OneDrive clients were not newly
 tested. Keep independent backups and retain sync-provider conflict copies.

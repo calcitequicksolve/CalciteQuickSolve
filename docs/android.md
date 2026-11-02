@@ -8,11 +8,11 @@ Find your way around the phone UI and understand which desktop workflows are sti
 
 Download the signed 1.0.0 ARM64 APK from the official CalciteQuickSolve GitHub Release. It requires Android 11 or later. Allow installation from your browser or file manager when Android asks, then open the downloaded APK. This is a direct APK distribution; it does not imply a Play Store listing.
 
-- The production app uses com.calcitequicksolve.android and installs separately from the old .debug preview. Keep the preview installed until your notes, attachments and keys are verified in the production app. Transfer complete workspaces using QR, shared folders or supported exports, and unlock or import the matching keys. Private app storage and device-bound vault credentials do not migrate automatically.
+- The 1.0.0 APK keeps the existing application ID and signing certificate, so it updates the earlier APK in place. Install it over the existing app to retain notes, settings, workspace connections and keys. Do not uninstall the app first.
 - Calculator behavior, note formats, trial/licensing rules and portable encryption formats are shared with desktop.
 - Full-profile backup restore, ordered document tabs and file/attachment share intents remain unfinished. Shared workspace folders are available through the Android folder picker; main-library switching and automatic plain/encrypted exports remain Windows features.
 - Desktop tray, global shortcuts, Quick windows and popped-out windows are not Android features.
-- Future APK updates must use the same application ID and signing certificate. Install them over the current app to retain its data; do not uninstall first. Download links and checksums are on GitHub Releases.
+- Future direct APK updates retain the same application ID and signing certificate. Download links and checksums are on GitHub Releases. A release build can keep the original certificate without enabling Android debugging.
 
 <a id="navigation"></a>
 
