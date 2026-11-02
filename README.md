@@ -15,16 +15,17 @@ and release-specific technical details.
 
 ## Latest release
 
-**[0.1.8 Beta](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v0.1.8)**
-includes the new note history, automatic merging and conflict review.
+**[1.0.0](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v1.0.0)**
+is the production release, including note history, automatic merging and conflict review.
+Previous versions have been withdrawn from public download.
 
 | Platform | Download |
 | --- | --- |
-| Windows x64 | [Installer](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v0.1.8/CalciteQuickSolve_0.1.8_x64-setup.exe) · [Standalone EXE](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v0.1.8/CalciteQuickSolve-0.1.8.exe) |
-| Android 11+, ARM64 | [Preview APK](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v0.1.8/CalciteQuickSolve-0.1.8-android-arm64-preview.apk) |
+| Windows x64 | [Installer](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v1.0.0/CalciteQuickSolve_1.0.0_x64-setup.exe) · [Standalone EXE](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v1.0.0/CalciteQuickSolve-1.0.0.exe) |
+| Android 11+, ARM64 | [Signed APK](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v1.0.0/CalciteQuickSolve-1.0.0-android-arm64.apk) |
 
-[Release notes](release-notes/0.1.8.md) ·
-[SHA-256 checksums](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v0.1.8/SHA256SUMS.txt) ·
+[Release notes](release-notes/1.0.0.md) ·
+[SHA-256 checksums](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v1.0.0/SHA256SUMS.txt) ·
 [All releases](https://github.com/calcitequicksolve/CalciteQuickSolve/releases)
 
 ## Documentation
@@ -36,7 +37,7 @@ in the app's Settings → Help & Docs:
 - [Notes](docs/notes.md) and [attachments](docs/note-files.md)
 - [Workspaces and synchronization](docs/sync.md), including the [Syncthing example](docs/syncthing.md)
 - [Keys and encryption](docs/keys-and-encryption.md) and [backups](docs/security-and-backups.md)
-- [0.1.8 verification report](docs/verification-0.1.8.md), with tested scenarios and practical limits
+- [1.0.0 release verification](docs/verification-1.0.0.md) and the [pre-release synchronization audit](docs/verification-0.1.8.md), with tested scenarios and practical limits
 
 ## Issues and suggestions
 

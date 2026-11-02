@@ -4,9 +4,9 @@ Share selected workspace folders between devices while keeping other workspaces 
 
 <a id="history-018"></a>
 
-## Version 0.1.8: immutable history and conflict review
+## Immutable history and conflict review
 
-Use 0.1.8 on every editing device. CQS publishes immutable, hash-verified note states and parent links under notes/<note-id>/history. It uses Git-style history without creating a .git repository, shared index or HEAD. Each installation keeps its accepted copies, recovery journals and keys locally.
+Use 1.0.0 or later on every editing device. CQS publishes immutable, hash-verified note states and parent links under notes/<note-id>/history. It uses Git-style history without creating a .git repository, shared index or HEAD. Each installation keeps its accepted copies, recovery journals and keys locally.
 
 - Saved revisions and attachment dependencies travel through the shared folder. A passive Syncthing relay needs no running CQS instance, and editing devices can work offline.
 - Incoming objects are checked before activation. Missing parents, partial transfers, invalid bytes and locked encrypted records stay pending; repeated scans do not create duplicate history.

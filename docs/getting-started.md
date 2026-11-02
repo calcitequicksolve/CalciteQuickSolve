@@ -75,11 +75,11 @@ Open Settings → License and start the 30-day Notes trial. Switch to Notes, cho
 
 ## Choose how to update
 
-Settings → Updates shows the current version and lets you check for a newer release. Preferences apply immediately. Automatic checks run at startup and every six hours while the app is open.
+On Windows, Settings → Updates checks the public CalciteQuickSolve GitHub repository and shows the current version. Preferences apply immediately. Automatic checks run at startup and every six hours while the app is open; checking needs no GitHub account. Android APK updates are downloaded from GitHub Releases and installed using Android’s package installer.
 
 - Installed copies can choose Install now and reopen or Update on next restart. Update automatically downloads an eligible update in the background and installs it at the next app launch.
-- Standalone copies can check for updates and open the website to download a replacement EXE.
-- Update to betas is off by default. Turn it on, then click Check for updates to test beta releases. Beta users also receive newer production releases. Changing this option cancels queued updates; turning it off never downgrades the app. Older versions need a one-time manual installation to add this option.
+- Standalone copies check GitHub for updates and open GitHub Releases to download a replacement EXE.
+- Update to betas is off by default. Turn it on, then click Check for updates to test beta releases. Beta users also receive newer production releases. Changing this option cancels queued updates; turning it off never downgrades the app. Older builds that still use the website need a one-time manual installation of 1.0.0 to switch to GitHub.
 - Turning off Enable updates stops checks, downloads, queued installation, and notifications. Automatic checks and notifications can also be controlled separately.
 - Dismiss hides the current version's update notice until a newer version is found; the release remains visible in Settings.
 - Closing the main window leaves the app running in the tray. A queued update waits until you quit and launch the app again.

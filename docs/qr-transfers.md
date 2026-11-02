@@ -15,7 +15,7 @@ Use CalciteQuickSolve on both devices: one displays a repeating sequence of QR c
 - Auto-lock pauses from transfer preparation through review/import. The full timer restarts on completion or cancellation. Manual locking still cancels the session; finish or close transfers when done.
 
 [Notes and licensing](licensing.md)
-[Android preview: supported features and limits](android.md)
+[Android: supported features and limits](android.md)
 [Workspace, vault and note keys explained](keys-and-encryption.md)
 
 <a id="send-note"></a>
