@@ -28,6 +28,13 @@ Previous versions have been withdrawn from public download.
 [SHA-256 checksums](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v1.0.0/SHA256SUMS.txt) ·
 [All releases](https://github.com/calcitequicksolve/CalciteQuickSolve/releases)
 
+## Beta
+
+Version 1.0.1 adds the self-hosted server, browser UI, and encrypted server
+connections for Windows and Android.
+[1.0.1 Beta downloads](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v1.0.1) ·
+[Docker and Compose quickstart](docs/hosted-server/README.md)
+
 ## Documentation
 
 The website has the main product guides. Copies are available here and offline

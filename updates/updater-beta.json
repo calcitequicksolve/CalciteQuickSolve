@@ -1,1 +1,13 @@
-null
+{
+  "version": "1.0.1",
+  "channel": "beta",
+  "notes": "# CalciteQuickSolve 1.0.1 Beta\n\nThis beta adds the self-hosted server, a browser UI, and encrypted server\nconnections for Windows and Android.\n\n- Run the server with SQLite or PostgreSQL. Sync through the CQS API, an\n  encrypted Syncthing transport folder, or both.\n- Configure password or OAuth sign-in and add proxy headers to native\n  connections. In each app, open **Settings → Files & sync → Server &\n  encrypted sync**.\n- Use the browser UI for calculations and notes. It encrypts browser storage\n  and supports offline editing after setup and vault unlock.\n- Sync note revisions, attachments, and calculator history. Compatible\n  offline note edits merge automatically, and overlapping edits go to review.\n\nThe Windows x64 installer carries the CQS updater signature. Both Windows\nexecutables are Authenticode unsigned. The signed Android APK supports Android\n11+ on ARM64. Install it over the existing app to retain local data and keys.\n\nThe Linux amd64 server image is `slyke/calcitequicksolve-server:1.0.1`.\n[Docker and Compose quickstart](https://github.com/calcitequicksolve/CalciteQuickSolve/tree/v1.0.1/docs/hosted-server) ·\n[Docker Hub](https://hub.docker.com/r/slyke/calcitequicksolve-server/tags)\n",
+  "releasedOn": "2026-11-06",
+  "pub_date": "2026-11-06T22:54:48.333Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUjI4amQ2bWRMcW1yWC9CRTY1cEk0YllqV0cySzF6c2FNdE1HZjEzdXpxMWJWVnYxMHByUU81b1pUbTlOVXNvdUUxNkYvWDNmbGFMZ055bElWSC9KbVNQVzZnTVloK3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDA1NDM3CWZpbGU6Q2FsY2l0ZVF1aWNrU29sdmVfMS4wLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xCmdrNE5RTWNLbDNYMTQwQ1RKWUt1cmxqR2JpcjdUUEpIdHpvTUpUdk5RbDRaRXlBTXhuZjBoemZUbGJHaDJuWFNiSkxlOEhPZFJ3ZFhEVWh6NXFneENBPT0K",
+      "url": "https://github.com/calcitequicksolve/CalciteQuickSolve/releases/download/v1.0.1/CalciteQuickSolve_1.0.1_x64-setup.exe"
+    }
+  }
+}
