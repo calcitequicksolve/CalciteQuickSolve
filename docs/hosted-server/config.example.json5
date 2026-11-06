@@ -1,0 +1,14 @@
+{
+  publicBaseUrl: '${CQS_PUBLIC_BASE_URL}',
+  dataRoot: '/data',
+  uiRoot: '/app/ui',
+  http: { host: '0.0.0.0', port: 8788 },
+  database: { engine: 'sqlite', path: 'cqs.sqlite' },
+  sync: { mode: 'api' },
+  auth: {
+    allowedUsers: ['owner'],
+    local: {
+      users: [{ username: 'owner', passwordHash: '${CQS_OWNER_PASSWORD_HASH}' }],
+    },
+  },
+}
