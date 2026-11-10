@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cqs-server-license
+type: Opaque
+stringData:
+  # Replace the placeholder. The activation may span multiple indented lines.
+  activation: |-
+    PASTE_SIGNED_FULL_NOTES_ACTIVATION_HERE

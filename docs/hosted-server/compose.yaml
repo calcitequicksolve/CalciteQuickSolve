@@ -1,12 +1,13 @@
 services:
   cqs:
-    image: slyke/calcitequicksolve-server:v1.0.2@sha256:570990855efb07d3ef88ea271cfffc6a05a38aa75fa787c99d357cc28b56acf3
+    image: slyke/calcitequicksolve-server:v1.0.3@sha256:53726285d0dec2d915835fe36b6ca464405ee77a6ffd0d10506d7a5bacc8215f
     restart: unless-stopped
     env_file: ./server.env
     ports:
       - "127.0.0.1:8788:8788"
     volumes:
       - ./config.json5:/config/config.json5:ro
+      - ./server.activation:/run/secrets/cqs/activation:ro
       - cqs-data:/data
     read_only: true
     tmpfs:

@@ -35,35 +35,35 @@
   },
   "beta": {
     "schemaVersion": 1,
-    "version": "1.0.2",
+    "version": "1.0.3",
     "releasedOn": "2026-11-09",
     "channel": "beta",
     "platform": "Windows",
     "architecture": "x64",
     "files": [
       {
-        "updaterSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUjI4amQ2bWRMcW1vYlN3VVBqN1puUk1sRVl6UzJKQWJYR3lSTVcvRlRUaXB1R2xjOWI2d2FWazZtZ3pvRGd3RCtNUjlqb2poVW5zOU1uVVRSWmhqQUtmV3FTYjB3dUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjcwNTkzCWZpbGU6Q2FsY2l0ZVF1aWNrU29sdmVfMS4wLjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yCnJsK0lwSXFiTGZ5K0hOUWRNMnA3b3lrYnZZeTF0Mzl5YXYyRkxKNThGK0dDR0Fkd3JxcitjVVh0VFdqaEQ0dW1tRnpPUlZDYVd4OGR2ZitQM3dybEFRPT0K",
-        "timestamped": false,
-        "kind": "installer",
-        "filename": "CalciteQuickSolve_1.0.2_x64-setup.exe",
-        "signatureStatus": "unsigned",
+        "bytes": 10758118,
         "signerSubject": "",
-        "bytes": 10748889,
-        "sha256": "55ac351c5ab30f1102a31f310858e5c29f6ac2fe2f527dc75ae7a5b83d25ada3"
+        "signatureStatus": "unsigned",
+        "filename": "CalciteQuickSolve_1.0.3_x64-setup.exe",
+        "kind": "installer",
+        "updaterSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUjI4amQ2bWRMcWx0cHNPQWlVZGN6UkRVaXhyOWEyaGtQQ2ljWENNNFdzclgvb2U2Vm9TbTY0Mmc0WHZMbGxVcncwSmEvanVHdlpUK3pMeHMrQndTYTVSNVZ6OG9reHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjczMjMwCWZpbGU6Q2FsY2l0ZVF1aWNrU29sdmVfMS4wLjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4zCkoxQlNWeTRUbmFPWXc4T1hNdmJTUnhoNnA0VGVmN3JTeHdmbk83N0NhZGRxbS9aZkFZZVlrWjZLbHZLNG1YRFNIbkVhVEdqeFdUeWx3bUkvQVV2SkJBPT0K",
+        "sha256": "8a081734f69c152aa52fd43536a5edb41aab2e489dfb2f5661d836b52720cd85",
+        "timestamped": false
       },
       {
-        "installedSha256": "0adec85600f0f1c2a3616a16b44a249031ac6c730af16773e1ab8155ddc9b39f",
-        "timestamped": false,
-        "kind": "portable",
-        "filename": "CalciteQuickSolve-1.0.2.exe",
-        "signatureStatus": "unsigned",
+        "bytes": 30884352,
         "signerSubject": "",
-        "bytes": 30880256,
-        "sha256": "a3909257bd6ffd73f291450fcc5b3851a3d054f67a76b33443bf7a9942c39b9a"
+        "signatureStatus": "unsigned",
+        "filename": "CalciteQuickSolve-1.0.3.exe",
+        "installedSha256": "57cfe1aa9504e53bac4c3ce38a47e0be1696f3ed309bb186adbc2a232c562e2f",
+        "kind": "portable",
+        "sha256": "41f4293ec8a98f5dc2cb17e3e5e5c515f85ef98c8091259328ca8d5cfbc6c488",
+        "timestamped": false
       }
     ],
     "downloadHost": "github",
     "publishedOn": "2026-11-10",
-    "notes": "# CalciteQuickSolve 1.0.2 Beta\n\n- The hosted Web UI combines notes from active workspaces. Use `/calc`,\n  `/notes`, and `/settings/api` to link directly to those views.\n- Activate each server with a signed Full/Notes license. Enter it in the Web UI\n  or provide it through the container environment or a mounted secret.\n- The API settings manage two-way sync credentials, incoming workspace\n  approvals, and direct server peers. MCP has its own agent settings.\n- Choose workspaces per server. Once a server approves an incoming workspace,\n  start its first sync on each device. Server peers can mirror approved\n  workspaces over multiple links and catch up after a disconnect.\n- Import an individual CQS note by QR in the browser. Windows, Android and the\n  browser share the corrected refresh icon.\n\nThe Linux amd64 server image is `slyke/calcitequicksolve-server:v1.0.2` and\n`slyke/calcitequicksolve-server:beta`. Pause mirroring and edits on the replicas\nbefore rotating keys at the originating server.\n[Server activation and peer setup](https://github.com/calcitequicksolve/CalciteQuickSolve/tree/v1.0.2/docs/hosted-server)\n\nThe Windows installer carries the CQS updater signature. The signed Android\nAPK supports Android 11+ on ARM64 and keeps the existing app identity.\n"
+    "notes": "# CalciteQuickSolve 1.0.3 Beta\n\n- The refresh arrows meet the curves on Windows, Android and the Web UI.\n- Set `license.file` in the server JSON5 configuration to use a mounted\n  Full/Notes activation. The file can contain line breaks and spaces.\n  Settings displays the file path and status. Servers without a valid file\n  offer calculator mode.\n- Configure `publicAliases` for internal and external HTTPS access to the\n  same instance. Register each browser origin’s OAuth callback.\n- Review requesting clients in **Settings → API → Workspace approvals**.\n  Rejecting a request asks the client to retry. After approval, each device\n  starts its first sync.\n- Peer links support custom request headers and native OAuth during pairing.\n  API settings include a server information table and clone cursor help.\n  Externally managed listener fields are read-only.\n\nThe Linux amd64 image is `slyke/calcitequicksolve-server:v1.0.3` and\n`slyke/calcitequicksolve-server:beta`.\n[Server setup and Kubernetes license Secret](https://github.com/calcitequicksolve/CalciteQuickSolve/tree/v1.0.3/docs/hosted-server)\n\nThe Windows installer carries the CQS updater signature. The Android 11+\nARM64 APK uses the existing application ID and signing certificate.\n"
   }
 }
