@@ -1,6 +1,6 @@
 services:
   cqs:
-    image: slyke/calcitequicksolve-server:1.0.1
+    image: slyke/calcitequicksolve-server:v1.0.2@sha256:570990855efb07d3ef88ea271cfffc6a05a38aa75fa787c99d357cc28b56acf3
     restart: unless-stopped
     env_file: ./server.env
     ports:

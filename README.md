@@ -30,9 +30,9 @@ Previous versions have been withdrawn from public download.
 
 ## Beta
 
-Version 1.0.1 adds the self-hosted server, browser UI, and encrypted server
-connections for Windows and Android.
-[1.0.1 Beta downloads](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v1.0.1) ·
+Version 1.0.2 adds direct server links, workspace approvals, and a licensed
+Web UI with browser routes and QR note import.
+[1.0.2 Beta downloads](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v1.0.2) ·
 [Docker and Compose quickstart](docs/hosted-server/README.md)
 
 ## Documentation
