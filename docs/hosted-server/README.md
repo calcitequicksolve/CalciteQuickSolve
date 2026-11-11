@@ -150,3 +150,12 @@ license: { file: '/run/secrets/cqs/activation' },
 ```
 
 Roll out the Deployment. Verify the mounted source under **Settings → License**.
+
+## Remove a workspace from this server
+
+In **Settings → Files & sync → Workspaces**, choose **Remove from server** and
+confirm. This deletes the server copy and clears its peer workspace selections.
+Clients and peers retain their copies. The next client sync attempt automatically
+adds the workspace to **Settings → API → Workspace approvals** again. Approve it,
+then start its first sync on the client to restore the server copy. Peer links
+also need workspace approval again. Removal does not cascade through the mesh.

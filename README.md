@@ -30,10 +30,10 @@ Previous versions have been withdrawn from public download.
 
 ## Beta
 
-Version 1.0.3 adds mounted server licenses, multiple access URLs, workspace
-request review and peer authentication. It also updates the Windows and Android
-refresh icon.
-[1.0.3 Beta downloads](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v1.0.3) ·
+Version 1.0.1 Beta has refreshed builds for Windows, Android and the server.
+It fixes Android launch and updates workspace sync, connection setup and API
+administration.
+[1.0.1 Beta downloads](https://github.com/calcitequicksolve/CalciteQuickSolve/releases/tag/v1.0.1) ·
 [Docker and Compose quickstart](docs/hosted-server/README.md)
 
 ## Documentation
