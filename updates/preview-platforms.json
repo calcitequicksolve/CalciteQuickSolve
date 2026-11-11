@@ -10,29 +10,29 @@
       "architecture": "x64",
       "files": [
         {
-          "signatureStatus": "unsigned",
-          "updaterSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUjI4amQ2bWRMcXNmL1UySkhtbVlPZyt6UUVNRTRsb1VYQ0tGcjhtU3VhUEJOKzUrNEwxbjMvd3JsamNILzhuVVArZng3MDI0cDlGSGpVUXFpbEJQa3lZVXNhbFAxU1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzYxMzc1CWZpbGU6Q2FsY2l0ZVF1aWNrU29sdmVfMS4wLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xCitpTjNmYSsxSS9tRW83TDJzRUlaM0dPbDJNTUlCREtNcEN5cFg1RjdxOW5zNFM4YmhyVXRpdVIyY3BMVWdlV3NPQ1UzL2pYamlUVXFwTjh6cXJ5TENnPT0K",
-          "bytes": 10763822,
-          "timestamped": false,
-          "kind": "installer",
-          "signerSubject": "",
+          "updaterSignature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUjI4amQ2bWRMcXBrSnJOZTJmUnNlU1dZZ1I4VGxFdXZyRVBrQUwxSEIyQXh5RGxObHA0UTBpaDVWdHRjUUlqSUlld0twTGR4ckJURVl0V0dZeE1LTzlRQmRTZlNUQkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzYzNTM4CWZpbGU6Q2FsY2l0ZVF1aWNrU29sdmVfMS4wLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xCnhPbHBuMThzU3Zxb2JlYkpHd1BFYUxEa0hGL1ZBWjJyTlozVGdHbDNqb2RCTkI1YW5DYjZQVWxuaWFzb0o3cGlCeU9TSVZBZXpPL3JCQ29sN0svVUF3PT0K",
+          "sha256": "191e292ddd4f61d675fef59e5fca2baa5c9d1b5848b83bf745a80dbe92d27578",
           "filename": "CalciteQuickSolve_1.0.1_x64-setup.exe",
-          "sha256": "2c7cd028792c1c9450c207d11840904a6e122e944f2941b244387230e271ef6f"
+          "signatureStatus": "unsigned",
+          "bytes": 10761378,
+          "signerSubject": "",
+          "timestamped": false,
+          "kind": "installer"
         },
         {
-          "signatureStatus": "unsigned",
-          "installedSha256": "20fcc5f7d99454f767e8ee30505080314bc4937916dfec796a8eaea21a7c12ed",
-          "bytes": 30896640,
-          "timestamped": false,
-          "kind": "portable",
-          "signerSubject": "",
+          "sha256": "3f30ab65291fa3887470b981f46793196ac09553be33e9d04f4ea450789663af",
           "filename": "CalciteQuickSolve-1.0.1.exe",
-          "sha256": "38284cc733a3bd0338403d5da3cf7e81018a3c18f417cfd5da0f9116f7bf53f2"
+          "signatureStatus": "unsigned",
+          "bytes": 30896640,
+          "installedSha256": "8e34f629bc19c539f0f33d21c5a473c9c7e34402e984cad93ef0ef1252aa6cee",
+          "signerSubject": "",
+          "timestamped": false,
+          "kind": "portable"
         }
       ],
       "downloadHost": "github",
-      "publishedOn": "2026-11-11",
-      "notes": "# CalciteQuickSolve 1.0.1 Beta\n\nRefreshed builds of the existing 1.0.1 beta for Windows, Android and the server.\n\n- Fix the Android launch crash and align the shared refresh arrows on all three\n  platforms. Place backup reference help beside its label.\n- Select workspaces while adding a server connection. Approval and an explicit\n  first sync still come before uploads. The connection test shows the server name,\n  ID and version. General settings lets you name a client or server.\n- Keep the connection editor usable during OAuth sign-in. Cancel the wait if you\n  close the browser page. Protect request headers with values and keep one blank\n  header row at a time.\n- Put Listeners in an accordion. The API credential table reserves active names,\n  allows reuse after revocation and shows the 30-day cleanup countdown.\n- Show client and peer names, IDs and last-seen times. Removed directory entries\n  reappear on the next authenticated request.\n- Remove a workspace from this server while keeping client and peer copies. The\n  next sync attempt requests approval again. Start its first sync after approval\n  to restore the server copy.\n\nLinux amd64 image: `slyke/calcitequicksolve-server:beta` or\n`slyke/calcitequicksolve-server:v1.0.1`. Both tags point to the same build.\n\nThe Windows installer carries the CQS updater signature. The Android 11+\nARM64 APK retains the existing app ID, certificate and internal build code for\nin-place installation. Use these downloads to replace an existing beta build.\n"
+      "publishedOn": "2026-11-10",
+      "notes": "# CalciteQuickSolve 1.0.1 Beta\n\nRefreshed builds of the existing 1.0.1 beta for Windows, Android and the server.\n\n- Open native OAuth sign-in when a gateway redirects API metadata. Default\n  sign-in uses the configured issuer’s well-known OpenID Connect discovery.\n- Fix the Android launch crash and align the shared refresh arrows on all three\n  platforms. Place backup reference help beside its label.\n- Select workspaces while adding a server connection. Approval and an explicit\n  first sync still come before uploads. The connection test shows the server name,\n  ID and version. General settings lets you name a client or server.\n- Keep the connection editor usable during OAuth sign-in. Cancel the wait if you\n  close the browser page. Protect request headers with values and keep one blank\n  header row at a time.\n- Put Listeners in an accordion. The API credential table reserves active names,\n  allows reuse after revocation and shows the 30-day cleanup countdown.\n- Show client and peer names, IDs and last-seen times. Removed directory entries\n  reappear on the next authenticated request.\n- Remove a workspace from this server while keeping client and peer copies. The\n  next sync attempt requests approval again. Start its first sync after approval\n  to restore the server copy.\n\nLinux amd64 image: `slyke/calcitequicksolve-server:beta` or\n`slyke/calcitequicksolve-server:v1.0.1`. Both tags point to the same build.\n\nThe Windows installer carries the CQS updater signature. The Android 11+\nARM64 APK retains the existing app ID, certificate and internal build code for\nin-place installation. Use these downloads to replace an existing beta build.\n"
     },
     {
       "schemaVersion": 1,
@@ -51,15 +51,15 @@
           "kind": "apk",
           "filename": "CalciteQuickSolve-1.0.1-android-arm64.apk",
           "bytes": 24956642,
-          "sha256": "610da3a9e3e372810b045b5a4e707c0f092bf9c6a41c7e10e742011186a180ba",
+          "sha256": "9b5c343467a701c54a98d255705327a824cb9eb78d1d60a19a1cf69c0adcfc3a",
           "signatureStatus": "signed",
           "signerSubject": "C=US, O=Android, CN=Android Debug",
           "timestamped": false
         }
       ],
       "downloadHost": "github",
-      "publishedOn": "2026-11-11",
-      "notes": "# CalciteQuickSolve 1.0.1 Beta\n\nRefreshed builds of the existing 1.0.1 beta for Windows, Android and the server.\n\n- Fix the Android launch crash and align the shared refresh arrows on all three\n  platforms. Place backup reference help beside its label.\n- Select workspaces while adding a server connection. Approval and an explicit\n  first sync still come before uploads. The connection test shows the server name,\n  ID and version. General settings lets you name a client or server.\n- Keep the connection editor usable during OAuth sign-in. Cancel the wait if you\n  close the browser page. Protect request headers with values and keep one blank\n  header row at a time.\n- Put Listeners in an accordion. The API credential table reserves active names,\n  allows reuse after revocation and shows the 30-day cleanup countdown.\n- Show client and peer names, IDs and last-seen times. Removed directory entries\n  reappear on the next authenticated request.\n- Remove a workspace from this server while keeping client and peer copies. The\n  next sync attempt requests approval again. Start its first sync after approval\n  to restore the server copy.\n\nLinux amd64 image: `slyke/calcitequicksolve-server:beta` or\n`slyke/calcitequicksolve-server:v1.0.1`. Both tags point to the same build.\n\nThe Windows installer carries the CQS updater signature. The Android 11+\nARM64 APK retains the existing app ID, certificate and internal build code for\nin-place installation. Use these downloads to replace an existing beta build.\n"
+      "publishedOn": "2026-11-10",
+      "notes": "# CalciteQuickSolve 1.0.1 Beta\n\nRefreshed builds of the existing 1.0.1 beta for Windows, Android and the server.\n\n- Open native OAuth sign-in when a gateway redirects API metadata. Default\n  sign-in uses the configured issuer’s well-known OpenID Connect discovery.\n- Fix the Android launch crash and align the shared refresh arrows on all three\n  platforms. Place backup reference help beside its label.\n- Select workspaces while adding a server connection. Approval and an explicit\n  first sync still come before uploads. The connection test shows the server name,\n  ID and version. General settings lets you name a client or server.\n- Keep the connection editor usable during OAuth sign-in. Cancel the wait if you\n  close the browser page. Protect request headers with values and keep one blank\n  header row at a time.\n- Put Listeners in an accordion. The API credential table reserves active names,\n  allows reuse after revocation and shows the 30-day cleanup countdown.\n- Show client and peer names, IDs and last-seen times. Removed directory entries\n  reappear on the next authenticated request.\n- Remove a workspace from this server while keeping client and peer copies. The\n  next sync attempt requests approval again. Start its first sync after approval\n  to restore the server copy.\n\nLinux amd64 image: `slyke/calcitequicksolve-server:beta` or\n`slyke/calcitequicksolve-server:v1.0.1`. Both tags point to the same build.\n\nThe Windows installer carries the CQS updater signature. The Android 11+\nARM64 APK retains the existing app ID, certificate and internal build code for\nin-place installation. Use these downloads to replace an existing beta build.\n"
     }
   ]
 }
